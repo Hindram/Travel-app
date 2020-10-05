@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel App</title>
+        
+    </head>
+
+    <body class="modal-open">
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#">Travel Planner</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+          <h4>Plan your next trip now!</h4>
+          <div class="row" id="form-group">
+            <div class="col-12 col-lg-6">
+              <label>Start date:</label>
+              <input id="start" placeholder="dd/mm/yyyy" type="date">
+            </div>
+            <div class="col-12 col-lg-6">
+              <label>End date:</label>
+              <input id="end" placeholder="dd/mm/yyyy" type="date">
+            </div>
+            <div class="col-12 col-lg-12">
+                <label>My trip to:</label>
+                <input id="destination" placeholder="Destination/City" type="text">
+              </div>
+            <div class="col-12">
+                <p id="error"></p>
+              </div>
+            <div class="col-12" id="button-container">
+                <button class="btn btn-info" type="button" id="submit">Search</button>
+            </div> 
+          </div> 
+        </div>
+      
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#tripModal"
+          id="modal-display"></button>
+      
+        <!-- Bootsrap pop-up model will be shown for deatils -->
+        <!-- https://getbootstrap.com/docs/4.0/components/modal/ -->
+        <div class="modal fade" id="tripModal" tabindex="-1" role="dialog" aria-labelledby="tripModalTitle"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="tripModalTitle">Your trip to <span id="city"></span>, <span
+                    id="country"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="" id="modal-image">
+                <p>Typical weather for then is: <img src="" id="modal-icon"><span id="weather"></span></p>
+                <p>Your trip is  <span id="remaining-time"></span> days away.</p>
+                <p>Your trip length is <span id="length"></span> days.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="page__footer">
+            <p>&copy  Travel Planner -- 2020</p>
+        </footer>
+       
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>

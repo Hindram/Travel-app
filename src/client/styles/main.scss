@@ -1,0 +1,137 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap');
+
+body {
+	background: url('../images/bg.jpg');
+    background-size: cover;
+    font-family: 'Open Sans';
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+html {
+	overflow: scroll;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+main {
+    flex: 2;
+}
+h4 {
+    font-family: 'Fira Sans';
+}
+.main-nav ul {
+	display: grid;
+	background-color: rgba(255, 255, 255, .20);  
+	backdrop-filter: blur(3px);
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .main-nav a {
+	background-color: rgba(255, 255, 255, .20);
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans';
+	font-size: 30px;
+	font-weight: bold;
+  }
+  
+  .main-nav a:hover {
+	background: rgb(31, 167, 172);
+	color: #fff;
+  }
+.row {
+    margin-top: 0px;
+	margin-bottom: 0px;
+	#button-container{
+		text-align: center;
+		button {
+            width : 60%;
+		}
+	}
+}
+
+#form-group {
+	padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px;
+	.col-12 {
+        padding: 15px;
+		text-align: center;
+		background-color: rgba(255, 255, 255, .4);  
+		backdrop-filter: blur(3px);
+		label {
+			font-size: 1.5em
+		}
+		input {
+            width: 90%;
+			padding: 10px;
+			border-radius : 3px;
+			border: 1px;
+		}
+	}
+}
+
+#modal-display {
+	display: none;
+}
+
+#error {
+	color : rgba(223, 13, 13, 0.877);
+	font-size: 16px;
+	height: 20px;
+}
+
+#modal-image {
+	width: 100%;
+	border-radius: 3px;
+    margin-bottom: 20px;
+    align-content: center;
+}
+#modal-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.modal-body{
+	p{
+		font-weight: bolder;
+		span{
+            font-weight: bold;
+            color: rgb(109, 100, 100);
+		}
+	}
+}
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+/* Footer Styles */
+.page__footer {
+    background: rgb(31, 167, 172);
+    padding: 2em;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.page__footer p{
+    color: #fff;
+}
