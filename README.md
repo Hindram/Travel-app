@@ -1,5 +1,5 @@
 ## FEND Capstone Project: Travel App
-Travel app project obtians desired trip location & date from the user, and displays weather and an image of the location using information obtained from external APIs. 
+Travel app project obtains desired trip location & date from the user and displays weather and an image of the location using information obtained from external APIs. 
 
 ## Get Started
 1. cd into your new folder: npm install
