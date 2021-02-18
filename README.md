@@ -12,6 +12,7 @@ Travel app project obtains desired trip location & date from the user and displa
 This project was built using Bootstarp, Express Node Js framework and webpack.
 
 ## Project Dependencies
+    
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
     "cors": "^2.8.5",
@@ -25,6 +26,7 @@ This project was built using Bootstarp, Express Node Js framework and webpack.
     "webpack-cli": "^3.3.12"
 
 ## Project devDependencies
+    
     "@babel/core": "^7.11.1",
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
